@@ -6,7 +6,7 @@
   <title>Privacy Policy - 2otbo5ly</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Cairo:wght@700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -48,12 +48,32 @@
     .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
     .logo-text .en { font-size: 17px; font-weight: 800; color: #fff; }
     .logo-text .ar { font-family: 'Cairo', sans-serif; font-size: 13px; color: rgba(255,255,255,.4); }
-    .nav-links { display: flex; align-items: center; gap: 36px; }
+    .nav-links { display: flex; align-items: center; gap: 24px; }
     .nav-links a {
       font-size: 14px; font-weight: 500; color: rgba(255,255,255,.55);
       text-decoration: none; transition: color .2s;
     }
     .nav-links a:hover { color: #fff; }
+    .lang-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(212,175,55,.35);
+      color: var(--gold) !important;
+      font-weight: 600 !important;
+      background: rgba(212,175,55,.08);
+    }
+    .lang-toggle:hover {
+      color: #fff !important;
+      border-color: rgba(212,175,55,.6);
+      background: rgba(212,175,55,.18);
+    }
+    .lang-icon {
+      font-size: 15px;
+      line-height: 1;
+    }
     main {
       max-width: 900px; margin: 0 auto;
       padding: 140px 24px 80px;
@@ -141,6 +161,10 @@
     <a href="/">Home</a>
     <a href="/support.html">Support</a>
     <a href="/privacy">Privacy</a>
+    <a href="/privacy-ar.html" class="lang-toggle" aria-label="Switch to Arabic privacy policy">
+      <span class="lang-icon" aria-hidden="true">🌐</span>
+      العربية
+    </a>
   </div>
 </nav>
 
@@ -218,7 +242,7 @@
 
 <footer>
   <p>© 2026 <strong>2otbo5ly</strong>. All rights reserved. Made with ❤️ in Egypt 🇪🇬</p>
-  <p><a href="/privacy" style="color: rgba(255,255,255,.25);">Privacy Policy</a> · <a href="/support" style="color: rgba(255,255,255,.25);">Support</a></p>
+  <p><a href="/privacy" style="color: rgba(255,255,255,.25);">Privacy Policy</a> · <a href="/privacy-ar.html" style="color: rgba(255,255,255,.25);">سياسة الخصوصية (العربية)</a> · <a href="/support" style="color: rgba(255,255,255,.25);">Support</a></p>
 </footer>
 
 </body>

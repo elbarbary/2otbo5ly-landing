@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سياسة الخصوصية - اطبخلي</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Cairo:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --b:     #800020;
+      --bl:    #A0334D;
+      --bd:    #5C0015;
+      --gold:  #D4AF37;
+      --cream: #FFF8F6;
+      --dark:  #1A0A10;
+      --text:  #2D1520;
+      --mut:   #8C6B78;
+      --white: #FFFFFF;
+    }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: 'Cairo', 'Inter', system-ui, sans-serif;
+      background: var(--dark);
+      color: var(--white);
+      line-height: 1.8;
+    }
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 500;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 56px;
+      background: rgba(26,10,16,.85);
+      backdrop-filter: blur(24px);
+      border-bottom: 1px solid rgba(128,0,32,.15);
+    }
+    .logo {
+      display: flex; align-items: center; gap: 12px;
+      text-decoration: none;
+      direction: ltr;
+    }
+    .logo-mark {
+      width: 42px; height: 42px; border-radius: 14px;
+      background: linear-gradient(135deg, var(--b) 0%, var(--bd) 100%);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px;
+    }
+    .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+    .logo-text .en { font-size: 17px; font-weight: 800; color: #fff; }
+    .logo-text .ar { font-family: 'Cairo', sans-serif; font-size: 13px; color: rgba(255,255,255,.4); }
+    .nav-links { display: flex; align-items: center; gap: 24px; }
+    .nav-links a {
+      font-size: 14px; font-weight: 600; color: rgba(255,255,255,.6);
+      text-decoration: none; transition: color .2s;
+    }
+    .nav-links a:hover { color: #fff; }
+    .lang-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(212,175,55,.35);
+      color: var(--gold) !important;
+      font-weight: 700 !important;
+      background: rgba(212,175,55,.08);
+      direction: ltr;
+    }
+    .lang-toggle:hover {
+      color: #fff !important;
+      border-color: rgba(212,175,55,.6);
+      background: rgba(212,175,55,.18);
+    }
+    .lang-icon { font-size: 15px; line-height: 1; }
+    main {
+      max-width: 900px; margin: 0 auto;
+      padding: 140px 24px 80px;
+    }
+    h1 {
+      font-family: 'Cairo', sans-serif;
+      font-size: clamp(34px, 5vw, 56px);
+      font-weight: 900;
+      color: #fff;
+      margin-bottom: 16px;
+      letter-spacing: -.5px;
+    }
+    .intro {
+      font-size: 18px;
+      color: rgba(255,255,255,.65);
+      margin-bottom: 48px;
+      max-width: 700px;
+    }
+    h2 {
+      font-family: 'Cairo', sans-serif;
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--bl);
+      margin-top: 48px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 15px;
+      color: rgba(255,255,255,.78);
+      margin-bottom: 16px;
+      line-height: 1.95;
+    }
+    ul, ol {
+      margin-right: 24px;
+      margin-bottom: 20px;
+    }
+    li {
+      font-size: 15px;
+      color: rgba(255,255,255,.78);
+      margin-bottom: 12px;
+      line-height: 1.95;
+    }
+    a {
+      color: var(--gold);
+      text-decoration: none;
+      transition: color .2s;
+    }
+    a:hover { color: var(--bl); }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 32px;
+      font-size: 14px;
+      color: var(--gold);
+      text-decoration: none;
+    }
+    .back-link:hover { color: var(--bl); }
+    footer {
+      background: #080200;
+      padding: 40px 24px;
+      display: flex; flex-direction: column; align-items: center; gap: 16px;
+      text-align: center;
+      border-top: 1px solid rgba(128,0,32,.15);
+      margin-top: 80px;
+    }
+    footer p { font-size: 13px; color: rgba(255,255,255,.25); margin: 0; }
+    footer strong { color: var(--bl); }
+    @media (max-width: 900px) {
+      nav { padding: 15px 24px; }
+      .nav-links { display: none; }
+      main { padding: 120px 24px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="/">
+    <div class="logo-mark">🍽️</div>
+    <div class="logo-text">
+      <span class="en">2otbo5ly</span>
+      <span class="ar">اطبخلي</span>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="/">الرئيسية</a>
+    <a href="/support.html">الدعم</a>
+    <a href="/privacy">الخصوصية</a>
+    <a href="/privacy.html" class="lang-toggle" aria-label="Switch to English privacy policy">
+      <span class="lang-icon" aria-hidden="true">🌐</span>
+      English
+    </a>
+  </div>
+</nav>
+
+<main>
+  <a href="/" class="back-link">العودة للرئيسية →</a>
+
+  <h1>سياسة الخصوصية</h1>
+  <p class="intro">آخر تحديث: مارس 2026</p>
+
+  <h2>1. مقدمة</h2>
+  <p>مرحباً بك في 2otbo5ly ("نحن" أو "الشركة"). نحن ملتزمون بحماية خصوصيتك. توضح هذه السياسة كيفية جمع معلوماتك واستخدامها والإفصاح عنها وحمايتها عند استخدام تطبيقنا وموقعنا.</p>
+
+  <h2>2. المعلومات التي نجمعها</h2>
+  <p>نقوم بجمع المعلومات بعدة طرق، منها:</p>
+  <ul>
+    <li><strong>معلومات الحساب</strong>: الاسم، البريد الإلكتروني، رقم الهاتف، الموقع، ومعلومات الدفع</li>
+    <li><strong>بيانات الاستخدام</strong>: أنماط استخدام التطبيق، الصفحات التي تمت زيارتها، وعمليات البحث والتفاعل</li>
+    <li><strong>بيانات الموقع</strong>: موقعك لإظهار الطهاة القريبين وخيارات التوصيل</li>
+    <li><strong>معلومات الجهاز</strong>: نوع الجهاز، نظام التشغيل، ومعلومات شبكة الهاتف</li>
+    <li><strong>بيانات التواصل</strong>: الرسائل بين المستخدمين والطهاة، واستفسارات الدعم</li>
+  </ul>
+
+  <h2>3. كيف نستخدم معلوماتك</h2>
+  <p>نستخدم المعلومات التي نجمعها من أجل:</p>
+  <ul>
+    <li>تقديم خدماتنا والمحافظة عليها</li>
+    <li>معالجة الطلبات والمعاملات وإرسال المعلومات المتعلقة بها</li>
+    <li>إرسال عروض ورسائل تسويقية (بموافقتك)</li>
+    <li>الرد على استفساراتك وطلبات الدعم</li>
+    <li>تحسين التطبيق والخدمات</li>
+    <li>اكتشاف ومنع الأنشطة الاحتيالية</li>
+    <li>الامتثال للالتزامات القانونية</li>
+  </ul>
+
+  <h2>4. أمن البيانات</h2>
+  <p>نطبق إجراءات تقنية وتنظيمية مناسبة لحماية بياناتك الشخصية من الوصول غير المصرح به أو التعديل أو الإفصاح أو الإتلاف. ومع ذلك، لا توجد وسيلة نقل عبر الإنترنت آمنة بنسبة 100%، لذلك لا يمكننا ضمان الأمان المطلق لبياناتك.</p>
+
+  <h2>5. مشاركة معلوماتك</h2>
+  <p>قد نشارك معلوماتك مع:</p>
+  <ul>
+    <li><strong>مزودي الخدمات</strong>: أطراف ثالثة تساعدنا على تشغيل التطبيق وإدارة الأعمال</li>
+    <li><strong>الطهاة</strong>: عنوان التوصيل وتفاصيل الطلب تتم مشاركتها مع الشيف المسؤول عن إعداد الطلب</li>
+    <li><strong>معالجي الدفع</strong>: شركاء الدفع الآمن</li>
+    <li><strong>متطلبات قانونية</strong>: عند الحاجة وفق القانون أو بطلب من الجهات المختصة</li>
+  </ul>
+  <p>نحن لا نبيع معلوماتك الشخصية لأطراف ثالثة لأغراض التسويق.</p>
+
+  <h2>6. حقوقك</h2>
+  <p>وفقاً لموقعك الجغرافي، قد يكون لك الحقوق التالية:</p>
+  <ul>
+    <li>الوصول إلى بياناتك الشخصية</li>
+    <li>تصحيح البيانات غير الدقيقة</li>
+    <li>طلب حذف بياناتك</li>
+    <li>إلغاء الاشتراك في الرسائل التسويقية</li>
+    <li>نقل البيانات</li>
+  </ul>
+
+  <h2>7. ملفات تعريف الارتباط والتتبع</h2>
+  <p>نستخدم ملفات تعريف الارتباط وتقنيات تتبع مماثلة لتحسين تجربتك. يمكنك التحكم في إعدادات ملفات تعريف الارتباط عبر المتصفح، مع العلم أن تعطيلها قد يحد من بعض الوظائف.</p>
+
+  <h2>8. خصوصية الأطفال</h2>
+  <p>خدماتنا غير موجهة للأطفال دون 13 عاماً. نحن لا نجمع عن قصد معلومات شخصية من الأطفال دون هذا العمر. وإذا علمنا بذلك، سنقوم بحذفها فوراً.</p>
+
+  <h2>9. تحديثات السياسة</h2>
+  <p>قد نقوم بتحديث سياسة الخصوصية من وقت لآخر. سيتم إخطارك بالتغييرات من خلال تحديث تاريخ "آخر تحديث". استمرارك في استخدام الخدمة يعني موافقتك على السياسة المعدلة.</p>
+
+  <h2>10. تواصل معنا</h2>
+  <p>إذا كان لديك أي أسئلة حول هذه السياسة أو ممارسات الخصوصية لدينا، يمكنك التواصل معنا عبر:</p>
+  <ul>
+    <li><strong>البريد الإلكتروني</strong>: <a href="mailto:privacy@2otbo5ly.com">privacy@2otbo5ly.com</a></li>
+    <li><strong>العنوان</strong>: القاهرة، مصر</li>
+    <li><strong>صفحة الدعم</strong>: <a href="/support.html">زيارة صفحة الدعم</a></li>
+  </ul>
+</main>
+
+<footer>
+  <p>© 2026 <strong>2otbo5ly</strong>. جميع الحقوق محفوظة. صُنع بحب في مصر 🇪🇬</p>
+  <p><a href="/privacy-ar.html" style="color: rgba(255,255,255,.25);">سياسة الخصوصية</a> · <a href="/privacy.html" style="color: rgba(255,255,255,.25);">Privacy Policy</a> · <a href="/support" style="color: rgba(255,255,255,.25);">الدعم</a></p>
+</footer>
+
+</body>
+</html>
