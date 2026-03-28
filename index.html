@@ -233,6 +233,7 @@
     animation: fadeUp .9s .4s ease both;
   }
   .btn-primary {
+    display: inline-flex; align-items: center; justify-content: center;
     background: linear-gradient(135deg, var(--b) 0%, var(--bd) 100%);
     color: #fff;
     border: 1px solid rgba(212,175,55,.2);
@@ -240,7 +241,7 @@
     font-size: 16px; font-weight: 700; cursor: pointer; letter-spacing: .2px;
     box-shadow: 0 8px 36px var(--bg), inset 0 1px 0 rgba(255,255,255,.12);
     transition: all .3s cubic-bezier(.34,1.56,.64,1);
-    position: relative; overflow: hidden;
+    position: relative; overflow: hidden; text-decoration: none;
   }
   .btn-primary::before {
     content: '';
@@ -272,12 +273,13 @@
     transition-duration: .1s;
   }
   .btn-ghost {
+    display: inline-flex; align-items: center; justify-content: center;
     background: rgba(255,255,255,.05);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,.12);
     color: #fff; border-radius: 50px; padding: 18px 48px;
     font-size: 16px; font-weight: 600; cursor: pointer;
-    transition: all .3s;
+    transition: all .3s; text-decoration: none;
   }
   .btn-ghost:hover {
     background: rgba(128,0,32,.15);
@@ -967,6 +969,18 @@
     max-width: 480px; margin-left: auto; margin-right: auto;
     line-height: 1.7;
   }
+  .beta-note {
+    margin-top: 18px;
+    font-size: 13px;
+    color: rgba(255,255,255,.62);
+    line-height: 1.8;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .beta-note strong { color: rgba(255,255,255,.92); }
+  .beta-note a { color: var(--gold); text-decoration: none; }
+  .beta-note a:hover { color: var(--bl); }
   .store-row { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
   .store-btn {
     display: flex; align-items: center; gap: 16px;
@@ -976,7 +990,7 @@
     cursor: pointer;
     transition: all .4s cubic-bezier(.34,1.56,.64,1);
     backdrop-filter: blur(16px);
-    position: relative; overflow: hidden;
+    position: relative; overflow: hidden; text-decoration: none;
   }
   .store-btn::before {
     content: '';
@@ -1528,8 +1542,8 @@
     </p>
 
     <div class="hero-btns">
-      <button class="btn-primary">🍴 &nbsp;Order Food Now</button>
-      <button class="btn-ghost">Become a Chef &nbsp;👨‍🍳</button>
+      <a class="btn-primary" href="https://apps.apple.com/us/app/2otbo5ly/id6761140519" target="_blank" rel="noopener noreferrer">🍴 &nbsp;Order Food Now</a>
+      <a class="btn-ghost" href="https://apps.apple.com/us/app/2otbo5ly/id6761140519" target="_blank" rel="noopener noreferrer">Cook or Sell as a Chef &nbsp;👨‍🍳</a>
     </div>
   </div>
 
@@ -1705,23 +1719,30 @@
   <div class="dl-content">
     <div class="dl-badge fi">Available Now</div>
     <h2 class="fi">Hungry? <span>Let's fix that.</span></h2>
-    <p class="fi">Free to download. No subscription. Just real food from real people.</p>
+    <p class="fi">Free to download. One app for both customers and chefs.</p>
     <div class="store-row">
-      <button class="store-btn fi">
+      <a class="store-btn fi" href="https://apps.apple.com/us/app/2otbo5ly/id6761140519" target="_blank" rel="noopener noreferrer" aria-label="Download 2otbo5ly on the App Store">
         <div class="ico">🍎</div>
         <div class="txt">
           <div class="sm">Download on the</div>
           <div class="lg">App Store</div>
         </div>
-      </button>
-      <button class="store-btn fi" style="transition-delay:.1s">
+      </a>
+      <a class="store-btn fi" style="transition-delay:.1s" href="https://groups.google.com/g/2otbo5ly-testers" target="_blank" rel="noopener noreferrer" aria-label="Join Android testers group first">
         <div class="ico">▶</div>
         <div class="txt">
-          <div class="sm">Get it on</div>
-          <div class="lg">Google Play</div>
+          <div class="sm">Android beta</div>
+          <div class="lg">Join Testers Group</div>
         </div>
-      </button>
+      </a>
     </div>
+    <p class="beta-note fi" style="transition-delay:.16s">
+      Android users: first join the testers group at
+      <a href="https://groups.google.com/g/2otbo5ly-testers" target="_blank" rel="noopener noreferrer">groups.google.com/g/2otbo5ly-testers</a>,
+      then install from
+      <a href="https://play.google.com/store/apps/details?id=com.u2otbo5ly.app" target="_blank" rel="noopener noreferrer">Google Play</a>.
+      <strong>Use the same email address for the testers group and the Play Store account.</strong>
+    </p>
   </div>
 </section>
 
@@ -1740,6 +1761,7 @@
   <div class="footer-links">
     <a href="/privacy">Privacy Policy</a>
     <a href="/support">Support</a>
+    <a href="/delete-account.html">Delete Account</a>
   </div>
   <p>Made with ❤️ in Egypt 🇪🇬 &nbsp;·&nbsp; © 2026 <strong>2otbo5ly</strong>. All rights reserved.</p>
 </footer>
